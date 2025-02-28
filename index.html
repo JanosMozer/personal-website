@@ -1,17 +1,231 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>redirect-free-zone</title>
-    <meta name="description" content="My Project" />
-    <meta name="author" content="Author" />
-    <meta property="og:image" content="/og-image.png" />
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Janos Mozer - Biography</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#" class="logo">JM</a>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-content">
+        <h1>Janos Mozer</h1>
+        <h2>Co-Founder @ mesh. | Fellow Researcher</h2>
+        <p>Physicist-Engineer with a passion for research and innovation</p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">Contact Me</a>
+          <a href="#projects" class="btn btn-secondary">View Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="section-header">
+        <h2>About Me</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <p>I co-founded mesh., a company providing infrastructure for young developers focused on cutting-edge technology projects. Our goal at mesh. is to foster creativity, collaboration, and technical excellence among our members.</p>
+          <p>I am a physicist-engineer student at Budapest University of Technology, with a strong passion for research and innovation. Currently, I am an intern at the HUN-REN Wigner Research Centre for Physics, where I investigate the properties and interactions of perovskite inside nanoscale architectures.</p>
+        </div>
+        <div class="skills-container">
+          <div class="skills-group">
+            <h3>Top Skills</h3>
+            <ul>
+              <li>Computer Simulations</li>
+              <li>Mathematics</li>
+              <li>Physics</li>
+            </ul>
+          </div>
+          <div class="skills-group">
+            <h3>Languages</h3>
+            <ul>
+              <li>English (Full Professional)</li>
+              <li>French (Limited Working)</li>
+              <li>Hungarian (Native or Bilingual)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+      <div class="section-header">
+        <h2>Experience</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <div class="date">November 2023 - Present</div>
+            <h3>Co-Founder @ mesh.</h3>
+            <p class="location">Budapest, Hungary</p>
+            <p>mesh. is a hackerlab, where we seek, invest in, and elevate talent.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <div class="date">February 2024 - Present</div>
+            <h3>Intern at HUN-REN Wigner Research Centre for Physics</h3>
+            <p class="location">Budapest, Hungary</p>
+            <p>I research and synthesize perovskite filled inside nanotubes. I create measurement setups, during which I design 3D objects (ex: tool stands) and develop operating programs. Applied physics.</p>
+            <p>I participated in the 2024 Scientific Students' Associations Conference at BME, where I received the Special Award for Applied Physics and the Special Award from the Faculty of Natural Sciences at BME.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <div class="date">June 2024 - Present</div>
+            <h3>Software Engineer at Miracle Traffic Solutions</h3>
+            <p class="location">Budapest, Hungary</p>
+            <p>Developing an agent based simulation environment for dynamic road pricing, and creating a decision model for how people behave based in this alternate vehicle taxing situation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+      <div class="section-header">
+        <h2>Education</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <div class="date">2022 - Present</div>
+            <h3>Budapest University of Technology</h3>
+            <p class="degree">BSc in Engineering Physics</p>
+            <p class="location">Budapest, Hungary</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="section-header">
+        <h2>Projects</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="projects-container">
+        <div class="project-card">
+          <div class="project-info">
+            <h3>mesh. Infrastructure</h3>
+            <p>Creating infrastructure for young developers focused on cutting-edge technology projects.</p>
+            <div class="project-tags">
+              <span>Tech Infrastructure</span>
+              <span>Collaboration</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-info">
+            <h3>Perovskite Nanoscale Architectures</h3>
+            <p>Research on properties and interactions of perovskite inside nanoscale architectures.</p>
+            <div class="project-tags">
+              <span>Physics</span>
+              <span>Research</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-info">
+            <h3>Agent-Based Simulation for Road Pricing</h3>
+            <p>Simulation environment for dynamic road pricing with behavioral decision models.</p>
+            <div class="project-tags">
+              <span>Simulation</span>
+              <span>Behavioral Models</span>
+            </div>
+          </div>
+        </div>
+        <!-- Placeholder for future projects -->
+        <div class="project-card empty">
+          <div class="project-info">
+            <h3>More Projects Coming Soon</h3>
+            <p>Additional projects will be added here.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="section-header">
+        <h2>Contact</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-label">Location:</span>
+            <span>Budapest, Hegėdűs Gyula u. 45-47, 1136</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Phone:</span>
+            <span>+36 20 268 4121</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Email:</span>
+            <span>mozerjanos4@gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">LinkedIn:</span>
+            <span><a href="https://www.linkedin.com/in/janos-mozer" target="_blank">linkedin.com/in/janos-mozer</a></span>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2024 Janos Mozer. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
