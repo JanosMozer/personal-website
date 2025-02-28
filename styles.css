@@ -24,12 +24,12 @@
 /* Base styles */
 :root {
   --primary-color: #1A1F2C;
-  --secondary-color: #C8C8C9; /* Changed from green to light gray */
-  --accent-color: #f3f3f3; /* Changed from green to lighter gray */
+  --secondary-color: #C8C8C9; /* Light gray */
+  --accent-color: #f3f3f3; /* Lighter gray */
   --light-color: #F1F1F1;
   --dark-color: #2C3E50;
-  --text-color: #333; /* Changed from light to dark */
-  --bg-color: #fff; /* Changed from dark to white */
+  --text-color: #333;
+  --bg-color: #fff;
   --border-radius: 4px;
   --transition: all 0.3s ease;
   --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -230,17 +230,25 @@ a:hover {
   padding: 0 20px;
   position: relative;
   background: var(--bg-color);
-  text-align: center;
 }
 
 .hero-content {
-  max-width: 800px;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.hero-text {
+  flex: 1;
+  text-align: left;
 }
 
 .profile-picture {
-  width: 200px;
-  height: 200px;
-  margin: 0 auto 30px;
+  width: 300px;
+  height: 300px;
   position: relative;
 }
 
@@ -285,7 +293,6 @@ a:hover {
 
 .hero-buttons {
   display: flex;
-  justify-content: center;
   gap: 20px;
 }
 
@@ -348,7 +355,7 @@ a:hover {
   left: 0;
 }
 
-/* Experience & Education Sections */
+/* Experience Section */
 .timeline {
   position: relative;
   max-width: 1200px;
@@ -414,10 +421,6 @@ a:hover {
   font-style: italic;
   color: #888;
   margin-bottom: 10px;
-}
-
-.degree {
-  font-weight: bold;
 }
 
 /* Expandable content for experiences */
@@ -496,11 +499,6 @@ a:hover {
   border-radius: 20px;
   font-size: 0.8rem;
   border: 1px solid var(--light-color);
-}
-
-.project-card.empty {
-  border: 1px dashed var(--secondary-color);
-  background-color: rgba(255, 255, 255, 0.5);
 }
 
 /* Contact Section */
@@ -610,6 +608,19 @@ a:hover {
 }
 
 @media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  
+  .hero-text {
+    text-align: center;
+  }
+  
+  .hero-buttons {
+    justify-content: center;
+  }
+  
   .nav-links {
     display: none;
     position: absolute;
@@ -643,28 +654,14 @@ a:hover {
     font-size: 1.2rem;
   }
   
-  .hero-buttons {
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .btn {
-    width: 100%;
-    text-align: center;
-  }
-  
-  section {
-    padding: 60px 20px;
-  }
-  
   .about-content, 
   .contact-content {
     flex-direction: column;
   }
   
   .profile-picture {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
   }
 }
 
