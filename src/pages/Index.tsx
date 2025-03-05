@@ -94,8 +94,12 @@ const Index = () => {
           </div>
           <div className="profile-picture">
             <div className="profile-picture-inner">
-              {/* Main image that shows by default */}
-              <img src="public/en.png" alt="Janos Mozer" className="profile-image" />
+              {/* Main image that shows by default - updated to the new image */}
+              <img 
+                src="public/lovable-uploads/d0cb8410-d21c-4dfe-9827-21f6fc3e2808.png" 
+                alt="Janos Mozer" 
+                className="profile-image" 
+              />
               {/* Hacker GIF that shows on hover */}
               <img 
                 src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTRrOGpzMWw2eXpmcW9wNnkyeDY1bDRnODZvbGQ5Zjh6cGJhYnRyeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26tPnAAJxXTvpLwJy/giphy.gif" 
