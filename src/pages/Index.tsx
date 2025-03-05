@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from 'react';
 import '../styles.css';
 
@@ -271,7 +270,12 @@ const Index = () => {
               
               // Optional: Show confirmation and reset form
               alert('Opening your email client. If nothing happens, please email me directly at ' + receivingEmail);
-              document.getElementById('contactForm')?.reset();
+              
+              // Fix: Use proper form reset method
+              const form = document.getElementById('contactForm') as HTMLFormElement;
+              if (form) {
+                form.reset();
+              }
             }}>
               <div className="form-group">
                 <label htmlFor="name">Name</label>
