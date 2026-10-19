@@ -23,6 +23,10 @@ for (const href of pages) {
   document.head.appendChild(link);
 }
 
+document.querySelector(".tb-close")?.addEventListener("click", () => {
+  document.querySelector(".window")?.remove();
+});
+
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.getRegistrations().then((regs) => {
     for (const reg of regs) reg.unregister();
