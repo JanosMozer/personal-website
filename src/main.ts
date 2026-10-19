@@ -13,3 +13,23 @@ document.querySelectorAll<HTMLAnchorElement>(".nav a[data-page]").forEach((link)
     link.classList.add("active");
   }
 });
+
+const pages = ["/", "/projects.html", "/about.html", "/blog.html"];
+
+for (const href of pages) {
+  const link = document.createElement("link");
+  link.rel = "prefetch";
+  link.href = href;
+  document.head.appendChild(link);
+}
+
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.getRegistrations().then((regs) => {
+    for (const reg of regs) reg.unregister();
+  });
+  if ("caches" in window) {
+    caches.keys().then((keys) => {
+      for (const key of keys) caches.delete(key);
+    });
+  }
+}
